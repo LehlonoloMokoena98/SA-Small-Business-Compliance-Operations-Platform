@@ -1,0 +1,6 @@
+@SaCompliance.Api_HostAddress = http://localhost:5045
+
+GET {{SaCompliance.Api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
