@@ -107,6 +107,43 @@
         "frameworkReferences": [
           "Microsoft.AspNetCore.App"
         ]
+      },
+      "SaCompliance.Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "SaCompliance.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/SaCompliance.Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/SaCompliance.Application.dll": {}
+        }
+      },
+      "SaCompliance.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/SaCompliance.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/SaCompliance.Domain.dll": {}
+        }
+      },
+      "SaCompliance.Infrastructure/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "SaCompliance.Application": "1.0.0",
+          "SaCompliance.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/SaCompliance.Infrastructure.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/SaCompliance.Infrastructure.dll": {}
+        }
       }
     }
   },
@@ -473,11 +510,28 @@
         "swashbuckle.aspnetcore.swaggerui.6.6.2.nupkg.sha512",
         "swashbuckle.aspnetcore.swaggerui.nuspec"
       ]
+    },
+    "SaCompliance.Application/1.0.0": {
+      "type": "project",
+      "path": "../SaCompliance.Application/SaCompliance.Application.csproj",
+      "msbuildProject": "../SaCompliance.Application/SaCompliance.Application.csproj"
+    },
+    "SaCompliance.Domain/1.0.0": {
+      "type": "project",
+      "path": "../SaCompliance.Domain/SaCompliance.Domain.csproj",
+      "msbuildProject": "../SaCompliance.Domain/SaCompliance.Domain.csproj"
+    },
+    "SaCompliance.Infrastructure/1.0.0": {
+      "type": "project",
+      "path": "../SaCompliance.Infrastructure/SaCompliance.Infrastructure.csproj",
+      "msbuildProject": "../SaCompliance.Infrastructure/SaCompliance.Infrastructure.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net8.0": [
       "Microsoft.AspNetCore.OpenApi >= 8.0.22",
+      "SaCompliance.Application >= 1.0.0",
+      "SaCompliance.Infrastructure >= 1.0.0",
       "Swashbuckle.AspNetCore >= 6.6.2"
     ]
   },
@@ -505,7 +559,14 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\Lehlonolo\\Desktop\\Projects\\SA-Small-Business-Compliance-Operations-Platform\\SaCompliancePlatform\\SaCompliance.Application\\SaCompliance.Application.csproj": {
+              "projectPath": "C:\\Users\\Lehlonolo\\Desktop\\Projects\\SA-Small-Business-Compliance-Operations-Platform\\SaCompliancePlatform\\SaCompliance.Application\\SaCompliance.Application.csproj"
+            },
+            "C:\\Users\\Lehlonolo\\Desktop\\Projects\\SA-Small-Business-Compliance-Operations-Platform\\SaCompliancePlatform\\SaCompliance.Infrastructure\\SaCompliance.Infrastructure.csproj": {
+              "projectPath": "C:\\Users\\Lehlonolo\\Desktop\\Projects\\SA-Small-Business-Compliance-Operations-Platform\\SaCompliancePlatform\\SaCompliance.Infrastructure\\SaCompliance.Infrastructure.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
