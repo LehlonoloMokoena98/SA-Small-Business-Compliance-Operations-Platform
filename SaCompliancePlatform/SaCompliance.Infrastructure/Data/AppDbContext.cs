@@ -10,4 +10,6 @@ public class AppDbContext : DbContext
 
     public DbSet<Business> Businesses => Set<Business>();
     public DbSet<Invoice> Invoices => Set<Invoice>();
+    public DbSet<User> Users => Set<User>();
+
 }
