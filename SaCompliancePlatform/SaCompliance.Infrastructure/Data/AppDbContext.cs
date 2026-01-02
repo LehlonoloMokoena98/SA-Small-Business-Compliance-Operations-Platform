@@ -1,4 +1,4 @@
-using Microsoft.EntityFra`meworkCore;
+using Microsoft.EntityFrameworkCore;
 using SaCompliance.Domain.Entities;
 
 namespace SaCompliance.Infrastructure.Data;

@@ -1,0 +1,12 @@
+C:\Users\Lehlonolo\Desktop\Projects\SA-Small-Business-Compliance-Operations-Platform\SaCompliancePlatform\SaCompliance.Domain\bin\Debug\net8.0\SaCompliance.Domain.deps.json
+C:\Users\Lehlonolo\Desktop\Projects\SA-Small-Business-Compliance-Operations-Platform\SaCompliancePlatform\SaCompliance.Domain\bin\Debug\net8.0\SaCompliance.Domain.dll
+C:\Users\Lehlonolo\Desktop\Projects\SA-Small-Business-Compliance-Operations-Platform\SaCompliancePlatform\SaCompliance.Domain\bin\Debug\net8.0\SaCompliance.Domain.pdb
+C:\Users\Lehlonolo\Desktop\Projects\SA-Small-Business-Compliance-Operations-Platform\SaCompliancePlatform\SaCompliance.Domain\obj\Debug\net8.0\SaCompliance.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Lehlonolo\Desktop\Projects\SA-Small-Business-Compliance-Operations-Platform\SaCompliancePlatform\SaCompliance.Domain\obj\Debug\net8.0\SaCompliance.Domain.AssemblyInfoInputs.cache
+C:\Users\Lehlonolo\Desktop\Projects\SA-Small-Business-Compliance-Operations-Platform\SaCompliancePlatform\SaCompliance.Domain\obj\Debug\net8.0\SaCompliance.Domain.AssemblyInfo.cs
+C:\Users\Lehlonolo\Desktop\Projects\SA-Small-Business-Compliance-Operations-Platform\SaCompliancePlatform\SaCompliance.Domain\obj\Debug\net8.0\SaCompliance.Domain.csproj.CoreCompileInputs.cache
+C:\Users\Lehlonolo\Desktop\Projects\SA-Small-Business-Compliance-Operations-Platform\SaCompliancePlatform\SaCompliance.Domain\obj\Debug\net8.0\SaCompliance.Domain.sourcelink.json
+C:\Users\Lehlonolo\Desktop\Projects\SA-Small-Business-Compliance-Operations-Platform\SaCompliancePlatform\SaCompliance.Domain\obj\Debug\net8.0\SaCompliance.Domain.dll
+C:\Users\Lehlonolo\Desktop\Projects\SA-Small-Business-Compliance-Operations-Platform\SaCompliancePlatform\SaCompliance.Domain\obj\Debug\net8.0\refint\SaCompliance.Domain.dll
+C:\Users\Lehlonolo\Desktop\Projects\SA-Small-Business-Compliance-Operations-Platform\SaCompliancePlatform\SaCompliance.Domain\obj\Debug\net8.0\SaCompliance.Domain.pdb
+C:\Users\Lehlonolo\Desktop\Projects\SA-Small-Business-Compliance-Operations-Platform\SaCompliancePlatform\SaCompliance.Domain\obj\Debug\net8.0\ref\SaCompliance.Domain.dll

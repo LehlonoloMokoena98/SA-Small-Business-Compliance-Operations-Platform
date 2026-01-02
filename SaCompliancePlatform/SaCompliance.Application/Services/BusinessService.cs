@@ -1,27 +1,24 @@
 using SaCompliance.Application.Interfaces;
 using SaCompliance.Domain.Entities;
-using SaCompliance.Infrastructure.Data;
 
 namespace SaCompliance.Application.Services;
 
 public class BusinessService : IBusinessService
 {
-    private readonly AppDbContext _context;
+    private readonly IBusinessRepository _businessRepository;
 
-    public BusinessService(AppDbContext context)
+    public BusinessService(IBusinessRepository businessRepository)
     {
-        _context = context;
+        _businessRepository = businessRepository;
     }
 
     public async Task<Business> CreateBusinessAsync(Business business)
     {
-        _context.Businesses.Add(business);
-        await _context.SaveChangesAsync();
-        return business;
+        return await _businessRepository.CreateBusinessAsync(business);
     }
 
     public async Task<IEnumerable<Business>> GetAllBusinessesAsync()
     {
-        return await Task.FromResult(_context.Businesses.ToList());
+        return await _businessRepository.GetAllBusinessesAsync();
     }
 }
