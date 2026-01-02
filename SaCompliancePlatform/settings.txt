@@ -1,0 +1,4 @@
+root: C:\Users\Lehlonolo\Desktop\Projects\SA-Small-Business-Compliance-Operations-Platform\SaCompliancePlatform 
+path: C:\Program Files\nodejs 
+arch: 64 
+proxy: none
