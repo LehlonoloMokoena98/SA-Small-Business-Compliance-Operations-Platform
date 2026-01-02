@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
 using SaCompliance.Application.Interfaces;
 using SaCompliance.Domain.Entities;
-
+using Microsoft.AspNetCore.Authorization;
 namespace SaCompliance.Api.Controllers;
 
 [ApiController]
@@ -21,11 +21,13 @@ public class BusinessesController : ControllerBase
         var result = await _service.CreateBusinessAsync(business);
         return Ok(result);
     }
-
+    
+    [Authorize]
     [HttpGet]
     public async Task<IActionResult> GetAll()
     {
         var businesses = await _service.GetAllBusinessesAsync();
         return Ok(businesses);
     }
+    
 }

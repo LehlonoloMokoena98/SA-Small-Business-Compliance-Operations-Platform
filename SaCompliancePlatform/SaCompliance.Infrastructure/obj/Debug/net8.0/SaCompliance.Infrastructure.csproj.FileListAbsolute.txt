@@ -16,3 +16,5 @@ C:\Users\Lehlonolo\Desktop\Projects\SA-Small-Business-Compliance-Operations-Plat
 C:\Users\Lehlonolo\Desktop\Projects\SA-Small-Business-Compliance-Operations-Platform\SaCompliancePlatform\SaCompliance.Infrastructure\obj\Debug\net8.0\refint\SaCompliance.Infrastructure.dll
 C:\Users\Lehlonolo\Desktop\Projects\SA-Small-Business-Compliance-Operations-Platform\SaCompliancePlatform\SaCompliance.Infrastructure\obj\Debug\net8.0\SaCompliance.Infrastructure.pdb
 C:\Users\Lehlonolo\Desktop\Projects\SA-Small-Business-Compliance-Operations-Platform\SaCompliancePlatform\SaCompliance.Infrastructure\obj\Debug\net8.0\ref\SaCompliance.Infrastructure.dll
+C:\Users\Lehlonolo\Desktop\Projects\SA-Small-Business-Compliance-Operations-Platform\SaCompliancePlatform\SaCompliance.Infrastructure\bin\Debug\net8.0\SaCompliance.Infrastructure.runtimeconfig.json
+C:\Users\Lehlonolo\Desktop\Projects\SA-Small-Business-Compliance-Operations-Platform\SaCompliancePlatform\SaCompliance.Infrastructure\obj\Debug\net8.0\SaCompliance.Infrastructure.genruntimeconfig.cache

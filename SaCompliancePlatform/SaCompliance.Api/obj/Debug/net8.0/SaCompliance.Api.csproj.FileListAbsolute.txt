@@ -148,3 +148,6 @@ C:\Users\Lehlonolo\Desktop\Projects\SA-Small-Business-Compliance-Operations-Plat
 C:\Users\Lehlonolo\Desktop\Projects\SA-Small-Business-Compliance-Operations-Platform\SaCompliancePlatform\SaCompliance.Api\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Users\Lehlonolo\Desktop\Projects\SA-Small-Business-Compliance-Operations-Platform\SaCompliancePlatform\SaCompliance.Api\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Users\Lehlonolo\Desktop\Projects\SA-Small-Business-Compliance-Operations-Platform\SaCompliancePlatform\SaCompliance.Api\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Lehlonolo\Desktop\Projects\SA-Small-Business-Compliance-Operations-Platform\SaCompliancePlatform\SaCompliance.Api\bin\Debug\net8.0\BCrypt.Net-Next.dll
+C:\Users\Lehlonolo\Desktop\Projects\SA-Small-Business-Compliance-Operations-Platform\SaCompliancePlatform\SaCompliance.Api\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\Lehlonolo\Desktop\Projects\SA-Small-Business-Compliance-Operations-Platform\SaCompliancePlatform\SaCompliance.Api\bin\Debug\net8.0\Microsoft.Bcl.TimeProvider.dll
