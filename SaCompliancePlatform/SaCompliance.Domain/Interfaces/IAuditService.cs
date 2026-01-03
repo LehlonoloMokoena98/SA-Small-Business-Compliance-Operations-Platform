@@ -1,0 +1,11 @@
+namespace SaCompliance.Application.Interfaces;
+
+public interface IAuditService
+{
+    Task LogAsync(
+        Guid? userId,
+        string action,
+        string entity,
+        string entityId
+    );
+}

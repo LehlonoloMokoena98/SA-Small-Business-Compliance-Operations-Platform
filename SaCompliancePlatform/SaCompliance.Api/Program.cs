@@ -5,6 +5,7 @@ using SaCompliance.Application.Services;
 using SaCompliance.Infrastructure.Data;
 using SaCompliance.Infrastructure.Repositories;
 using SaCompliance.Infrastructure;
+using SaCompliance.Infrastructure.Services;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
@@ -45,6 +46,7 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
 builder.Services.AddScoped<IAuthService, AuthService>();
 builder.Services.AddScoped<IInvoiceService, InvoiceService>();
 builder.Services.AddScoped<IInvoicePdfGenerator, InvoicePdfGenerator>();
+builder.Services.AddScoped<IAuditService, AuditService>();
 
 var app = builder.Build();
 

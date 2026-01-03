@@ -3,6 +3,7 @@ using SaCompliance.Application.Interfaces;
 using SaCompliance.Domain.Entities;
 using Microsoft.AspNetCore.Authorization;
 namespace SaCompliance.Api.Controllers;
+using SaCompliance.Api.Extensions;
 
 [ApiController]
 [Route("api/businesses")]
@@ -16,18 +17,19 @@ public class BusinessesController : ControllerBase
     }
 
     [HttpPost]
-    public async Task<IActionResult> Create(Business business)
+    public async Task<IActionResult> Create(
+    Business business,
+    [FromServices] IAuditService audit)
     {
-        var result = await _service.CreateBusinessAsync(business);
-        return Ok(result);
+    var result = await _service.CreateBusinessAsync(business);
+
+    await audit.LogAsync(
+        HttpContext.GetUserId(),
+        "CREATE",
+        "Business",
+        result.Id.ToString()
+    );
+
+    return Ok(result);
     }
-    
-    [Authorize]
-    [HttpGet]
-    public async Task<IActionResult> GetAll()
-    {
-        var businesses = await _service.GetAllBusinessesAsync();
-        return Ok(businesses);
-    }
-    
 }

@@ -8,11 +8,13 @@ public class InvoiceService : IInvoiceService
 {
     private readonly IInvoiceRepository _invoiceRepository;
     private readonly IBusinessRepository _businessRepository;
+    private readonly IAuditService _audit;
 
-    public InvoiceService(IInvoiceRepository invoiceRepository, IBusinessRepository businessRepository)
+    public InvoiceService(IInvoiceRepository invoiceRepository, IBusinessRepository businessRepository, IAuditService audit)
     {
         _invoiceRepository = invoiceRepository;
         _businessRepository = businessRepository;
+        _audit = audit;
     }
 
     public async Task<Invoice> CreateInvoiceAsync(CreateInvoiceDto dto)
@@ -34,8 +36,18 @@ public class InvoiceService : IInvoiceService
             BusinessId = business.Id
         };
 
-        return await _invoiceRepository.CreateInvoiceAsync(invoice);
+        var createdInvoice = await _invoiceRepository.CreateInvoiceAsync(invoice);
+
+        await _audit.LogAsync(
+            null,
+            "CREATE",
+            "Invoice",
+            createdInvoice.Id.ToString()
+        );
+
+        return createdInvoice;
     }
+
     public async Task<Invoice?> GetInvoiceAsync(Guid invoiceId)
     {
         return await _invoiceRepository.GetInvoiceAsync(invoiceId);

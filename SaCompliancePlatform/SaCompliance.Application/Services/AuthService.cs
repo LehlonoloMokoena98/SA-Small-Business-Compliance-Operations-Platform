@@ -12,11 +12,13 @@ public class AuthService : IAuthService
 {
     private readonly IUserRepository _userRepository;
     private readonly IConfiguration _config;
+    private readonly IAuditService _auditService;
 
-    public AuthService(IUserRepository userRepository, IConfiguration config)
+    public AuthService(IUserRepository userRepository, IConfiguration config, IAuditService auditService)
     {
         _userRepository = userRepository;
         _config = config;
+        _auditService = auditService;
     }
 
     public async Task<string> RegisterAsync(RegisterDto dto)
@@ -40,6 +42,8 @@ public class AuthService : IAuthService
         var user = await _userRepository.GetUserByEmailAsync(dto.Email);
         if (user == null || !BCrypt.Net.BCrypt.Verify(dto.Password, user.PasswordHash))
             throw new UnauthorizedAccessException("Invalid credentials");
+
+        await _auditService.LogAsync(user.Id, "LOGIN", "User", user.Id.ToString());
 
         return GenerateToken(user);
     }
