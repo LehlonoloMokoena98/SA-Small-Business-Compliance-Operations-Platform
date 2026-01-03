@@ -23,4 +23,23 @@ public class InvoicesController : ControllerBase
         var invoice = await _service.CreateInvoiceAsync(dto);
         return Ok(invoice);
     }
+
+    [HttpGet("{id}/pdf")]
+    public async Task<IActionResult> DownloadPdf(
+    Guid id,
+    [FromServices] IInvoicePdfGenerator pdfGenerator)
+    {
+    var invoice = await _service.GetInvoiceAsync(id);
+    if (invoice == null)
+        return NotFound();
+
+    var pdf = pdfGenerator.GenerateInvoicePdf(invoice);
+
+    return File(
+        pdf,
+        "application/pdf",
+        $"{invoice.InvoiceNumber}.pdf"
+    );
+    
+    }
 }

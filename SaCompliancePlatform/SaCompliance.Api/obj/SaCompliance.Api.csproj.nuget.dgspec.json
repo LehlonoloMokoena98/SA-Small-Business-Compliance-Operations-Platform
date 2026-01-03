@@ -120,9 +120,6 @@
             "projectReferences": {
               "C:\\Users\\Lehlonolo\\Desktop\\Projects\\SA-Small-Business-Compliance-Operations-Platform\\SaCompliancePlatform\\SaCompliance.Domain\\SaCompliance.Domain.csproj": {
                 "projectPath": "C:\\Users\\Lehlonolo\\Desktop\\Projects\\SA-Small-Business-Compliance-Operations-Platform\\SaCompliancePlatform\\SaCompliance.Domain\\SaCompliance.Domain.csproj"
-              },
-              "C:\\Users\\Lehlonolo\\Desktop\\Projects\\SA-Small-Business-Compliance-Operations-Platform\\SaCompliancePlatform\\SaCompliance.Infrastructure\\SaCompliance.Infrastructure.csproj": {
-                "projectPath": "C:\\Users\\Lehlonolo\\Desktop\\Projects\\SA-Small-Business-Compliance-Operations-Platform\\SaCompliancePlatform\\SaCompliance.Infrastructure\\SaCompliance.Infrastructure.csproj"
               }
             }
           }
@@ -259,6 +256,9 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
+              "C:\\Users\\Lehlonolo\\Desktop\\Projects\\SA-Small-Business-Compliance-Operations-Platform\\SaCompliancePlatform\\SaCompliance.Application\\SaCompliance.Application.csproj": {
+                "projectPath": "C:\\Users\\Lehlonolo\\Desktop\\Projects\\SA-Small-Business-Compliance-Operations-Platform\\SaCompliancePlatform\\SaCompliance.Application\\SaCompliance.Application.csproj"
+              },
               "C:\\Users\\Lehlonolo\\Desktop\\Projects\\SA-Small-Business-Compliance-Operations-Platform\\SaCompliancePlatform\\SaCompliance.Domain\\SaCompliance.Domain.csproj": {
                 "projectPath": "C:\\Users\\Lehlonolo\\Desktop\\Projects\\SA-Small-Business-Compliance-Operations-Platform\\SaCompliancePlatform\\SaCompliance.Domain\\SaCompliance.Domain.csproj"
               }

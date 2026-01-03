@@ -25,4 +25,9 @@ public class BusinessRepository : IBusinessRepository
     {
         return await _context.Businesses.ToListAsync();
     }
+
+    public async Task<Business?> GetBusinessAsync(Guid id)
+    {
+        return await _context.Businesses.FindAsync(id);
+    }
 }

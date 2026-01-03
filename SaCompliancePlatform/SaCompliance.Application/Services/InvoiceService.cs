@@ -2,20 +2,22 @@ using SaCompliance.Application.DTOs;
 using SaCompliance.Application.Interfaces;
 using SaCompliance.Domain.Constants;
 using SaCompliance.Domain.Entities;
-using SaCompliance.Infrastructure.Data;
+using SaCompliance.Domain.Interfaces;
 
 public class InvoiceService : IInvoiceService
 {
-    private readonly AppDbContext _context;
+    private readonly IInvoiceRepository _invoiceRepository;
+    private readonly IBusinessRepository _businessRepository;
 
-    public InvoiceService(AppDbContext context)
+    public InvoiceService(IInvoiceRepository invoiceRepository, IBusinessRepository businessRepository)
     {
-        _context = context;
+        _invoiceRepository = invoiceRepository;
+        _businessRepository = businessRepository;
     }
 
     public async Task<Invoice> CreateInvoiceAsync(CreateInvoiceDto dto)
     {
-        var business = await _context.Businesses.FindAsync(dto.BusinessId);
+        var business = await _businessRepository.GetBusinessAsync(dto.BusinessId);
         if (business == null)
             throw new Exception("Business not found");
 
@@ -32,9 +34,10 @@ public class InvoiceService : IInvoiceService
             BusinessId = business.Id
         };
 
-        _context.Invoices.Add(invoice);
-        await _context.SaveChangesAsync();
-
-        return invoice;
+        return await _invoiceRepository.CreateInvoiceAsync(invoice);
+    }
+    public async Task<Invoice?> GetInvoiceAsync(Guid invoiceId)
+    {
+        return await _invoiceRepository.GetInvoiceAsync(invoiceId);
     }
 }

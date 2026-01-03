@@ -6,4 +6,5 @@ public interface IBusinessRepository
 {
     Task<Business> CreateBusinessAsync(Business business);
     Task<IEnumerable<Business>> GetAllBusinessesAsync();
+    Task<Business?> GetBusinessAsync(Guid id);
 }

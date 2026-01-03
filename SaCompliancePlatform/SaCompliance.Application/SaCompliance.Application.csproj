@@ -2,7 +2,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\SaCompliance.Domain\SaCompliance.Domain.csproj" />
-    <ProjectReference Include="..\SaCompliance.Infrastructure\SaCompliance.Infrastructure.csproj" />
   </ItemGroup>
 
   <ItemGroup>
