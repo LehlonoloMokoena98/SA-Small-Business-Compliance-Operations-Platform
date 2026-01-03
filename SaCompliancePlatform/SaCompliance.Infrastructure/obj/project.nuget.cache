@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "+SbxlEsy+0U=",
+  "dgSpecHash": "r1xgYjR54X0=",
   "success": true,
   "projectFilePath": "C:\\Users\\Lehlonolo\\Desktop\\Projects\\SA-Small-Business-Compliance-Operations-Platform\\SaCompliancePlatform\\SaCompliance.Infrastructure\\SaCompliance.Infrastructure.csproj",
   "expectedPackageFiles": [
@@ -46,6 +46,7 @@
     "C:\\Users\\Lehlonolo\\.nuget\\packages\\microsoft.sqlserver.server\\1.0.0\\microsoft.sqlserver.server.1.0.0.nupkg.sha512",
     "C:\\Users\\Lehlonolo\\.nuget\\packages\\microsoft.win32.systemevents\\6.0.0\\microsoft.win32.systemevents.6.0.0.nupkg.sha512",
     "C:\\Users\\Lehlonolo\\.nuget\\packages\\mono.texttemplating\\2.2.1\\mono.texttemplating.2.2.1.nupkg.sha512",
+    "C:\\Users\\Lehlonolo\\.nuget\\packages\\questpdf\\2025.12.1\\questpdf.2025.12.1.nupkg.sha512",
     "C:\\Users\\Lehlonolo\\.nuget\\packages\\system.codedom\\4.4.0\\system.codedom.4.4.0.nupkg.sha512",
     "C:\\Users\\Lehlonolo\\.nuget\\packages\\system.collections.immutable\\6.0.0\\system.collections.immutable.6.0.0.nupkg.sha512",
     "C:\\Users\\Lehlonolo\\.nuget\\packages\\system.composition\\6.0.0\\system.composition.6.0.0.nupkg.sha512",
