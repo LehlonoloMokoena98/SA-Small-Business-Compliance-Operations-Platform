@@ -5,6 +5,7 @@ using System.Text;
 using Microsoft.Extensions.Configuration;
 using SaCompliance.Application.DTOs;
 using SaCompliance.Application.Interfaces;
+using SaCompliance.Domain.Interfaces;
 using SaCompliance.Domain.Entities;
 
 public class AuthService : IAuthService

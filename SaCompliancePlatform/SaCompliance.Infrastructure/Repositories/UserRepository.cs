@@ -1,4 +1,4 @@
-using SaCompliance.Application.Interfaces;
+using SaCompliance.Domain.Interfaces;
 using SaCompliance.Domain.Entities;
 using SaCompliance.Infrastructure.Data;
 using Microsoft.EntityFrameworkCore;

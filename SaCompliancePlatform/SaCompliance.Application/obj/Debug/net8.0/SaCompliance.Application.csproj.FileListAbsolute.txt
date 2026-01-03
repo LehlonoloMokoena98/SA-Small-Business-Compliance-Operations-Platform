@@ -14,3 +14,5 @@ C:\Users\Lehlonolo\Desktop\Projects\SA-Small-Business-Compliance-Operations-Plat
 C:\Users\Lehlonolo\Desktop\Projects\SA-Small-Business-Compliance-Operations-Platform\SaCompliancePlatform\SaCompliance.Application\obj\Debug\net8.0\refint\SaCompliance.Application.dll
 C:\Users\Lehlonolo\Desktop\Projects\SA-Small-Business-Compliance-Operations-Platform\SaCompliancePlatform\SaCompliance.Application\obj\Debug\net8.0\SaCompliance.Application.pdb
 C:\Users\Lehlonolo\Desktop\Projects\SA-Small-Business-Compliance-Operations-Platform\SaCompliancePlatform\SaCompliance.Application\obj\Debug\net8.0\ref\SaCompliance.Application.dll
+C:\Users\Lehlonolo\Desktop\Projects\SA-Small-Business-Compliance-Operations-Platform\SaCompliancePlatform\SaCompliance.Application\bin\Debug\net8.0\SaCompliance.Infrastructure.dll
+C:\Users\Lehlonolo\Desktop\Projects\SA-Small-Business-Compliance-Operations-Platform\SaCompliancePlatform\SaCompliance.Application\bin\Debug\net8.0\SaCompliance.Infrastructure.pdb

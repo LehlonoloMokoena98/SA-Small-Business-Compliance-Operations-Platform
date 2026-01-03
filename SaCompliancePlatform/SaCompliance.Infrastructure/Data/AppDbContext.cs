@@ -18,8 +18,19 @@ public class AppDbContext : DbContext
 
         modelBuilder.Entity<Invoice>(entity =>
         {
-            entity.Property(e => e.Amount).HasColumnType("decimal(18,2)");
+            entity.Property(e => e.SubTotal).HasColumnType("decimal(18,2)");
             entity.Property(e => e.VatAmount).HasColumnType("decimal(18,2)");
+            entity.Property(e => e.Total).HasColumnType("decimal(18,2)");
         });
+
+        // Seed default user
+        // modelBuilder.Entity<User>().HasData(new User
+        // {
+        //     Id = Guid.Parse("11111111-1111-1111-1111-111111111111"),
+        //     FullName = "Admin User",
+        //     Email = "admin@example.com",
+        //     PasswordHash = "$2a$11$qfhzNyyW0KaEAAT9NCn1h.6zV4GYtB8pjZ4Ct9XylifaSdm0OHtwS", // Hash for "admin123"
+        //     Role = "Admin"
+        // });
     }
 }

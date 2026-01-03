@@ -1,5 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using SaCompliance.Application.Interfaces;
+using SaCompliance.Domain.Interfaces;
 using SaCompliance.Application.Services;
 using SaCompliance.Infrastructure.Data;
 using SaCompliance.Infrastructure.Repositories;
@@ -38,6 +39,7 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
 });
 
 builder.Services.AddScoped<IAuthService, AuthService>();
+builder.Services.AddScoped<IInvoiceService, InvoiceService>();
 
 var app = builder.Build();
 
@@ -46,6 +48,14 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+
+// Apply migrations
+using (var scope = app.Services.CreateScope())
+{
+    var dbContext = scope.ServiceProvider.GetRequiredService<AppDbContext>();
+    dbContext.Database.Migrate();
+}
+
 app.UseAuthentication();
 app.UseAuthorization();
 app.MapControllers();

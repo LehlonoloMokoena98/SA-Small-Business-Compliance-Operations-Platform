@@ -1,6 +1,6 @@
 using SaCompliance.Domain.Entities;
 
-namespace SaCompliance.Application.Interfaces;
+namespace SaCompliance.Domain.Interfaces;
 
 public interface IUserRepository
 {

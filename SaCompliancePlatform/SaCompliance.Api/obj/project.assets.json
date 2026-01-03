@@ -1591,6 +1591,7 @@
           "Microsoft.Extensions.Configuration.Abstractions": "8.0.0",
           "Microsoft.IdentityModel.Tokens": "8.2.0",
           "SaCompliance.Domain": "1.0.0",
+          "SaCompliance.Infrastructure": "1.0.0",
           "System.IdentityModel.Tokens.Jwt": "8.2.0"
         },
         "compile": {
@@ -1616,7 +1617,6 @@
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "8.0.10",
           "Microsoft.EntityFrameworkCore.SqlServer": "8.0.10",
-          "SaCompliance.Application": "1.0.0",
           "SaCompliance.Domain": "1.0.0"
         },
         "compile": {

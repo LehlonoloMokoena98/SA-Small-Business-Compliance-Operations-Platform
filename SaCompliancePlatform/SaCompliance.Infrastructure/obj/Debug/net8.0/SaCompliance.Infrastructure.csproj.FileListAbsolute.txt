@@ -7,9 +7,7 @@ C:\Users\Lehlonolo\Desktop\Projects\SA-Small-Business-Compliance-Operations-Plat
 C:\Users\Lehlonolo\Desktop\Projects\SA-Small-Business-Compliance-Operations-Platform\SaCompliancePlatform\SaCompliance.Infrastructure\bin\Debug\net8.0\SaCompliance.Infrastructure.deps.json
 C:\Users\Lehlonolo\Desktop\Projects\SA-Small-Business-Compliance-Operations-Platform\SaCompliancePlatform\SaCompliance.Infrastructure\bin\Debug\net8.0\SaCompliance.Infrastructure.dll
 C:\Users\Lehlonolo\Desktop\Projects\SA-Small-Business-Compliance-Operations-Platform\SaCompliancePlatform\SaCompliance.Infrastructure\bin\Debug\net8.0\SaCompliance.Infrastructure.pdb
-C:\Users\Lehlonolo\Desktop\Projects\SA-Small-Business-Compliance-Operations-Platform\SaCompliancePlatform\SaCompliance.Infrastructure\bin\Debug\net8.0\SaCompliance.Application.dll
 C:\Users\Lehlonolo\Desktop\Projects\SA-Small-Business-Compliance-Operations-Platform\SaCompliancePlatform\SaCompliance.Infrastructure\bin\Debug\net8.0\SaCompliance.Domain.dll
-C:\Users\Lehlonolo\Desktop\Projects\SA-Small-Business-Compliance-Operations-Platform\SaCompliancePlatform\SaCompliance.Infrastructure\bin\Debug\net8.0\SaCompliance.Application.pdb
 C:\Users\Lehlonolo\Desktop\Projects\SA-Small-Business-Compliance-Operations-Platform\SaCompliancePlatform\SaCompliance.Infrastructure\bin\Debug\net8.0\SaCompliance.Domain.pdb
 C:\Users\Lehlonolo\Desktop\Projects\SA-Small-Business-Compliance-Operations-Platform\SaCompliancePlatform\SaCompliance.Infrastructure\obj\Debug\net8.0\SaCompli.2A6AAD66.Up2Date
 C:\Users\Lehlonolo\Desktop\Projects\SA-Small-Business-Compliance-Operations-Platform\SaCompliancePlatform\SaCompliance.Infrastructure\obj\Debug\net8.0\SaCompliance.Infrastructure.dll
