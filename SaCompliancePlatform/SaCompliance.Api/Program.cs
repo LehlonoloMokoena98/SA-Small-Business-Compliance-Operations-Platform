@@ -61,20 +61,10 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
-// Safe database migration
-try
+if (!app.Environment.IsDevelopment())
 {
-    using var scope = app.Services.CreateScope();
-    var dbContext = scope.ServiceProvider.GetRequiredService<AppDbContext>();
-    dbContext.Database.Migrate();
+    app.UseHttpsRedirection();
 }
-catch (Exception ex)
-{
-    // Log the exception but don't fail startup
-    Console.WriteLine($"Database migration failed: {ex.Message}");
-}
-
-app.UseHttpsRedirection();
 
 // Authentication temporarily disabled for debugging
 // app.UseAuthentication();
