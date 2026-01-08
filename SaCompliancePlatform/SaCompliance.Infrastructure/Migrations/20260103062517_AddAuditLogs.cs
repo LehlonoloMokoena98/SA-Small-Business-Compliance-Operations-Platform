@@ -31,6 +31,11 @@ namespace SaCompliance.Infrastructure.Migrations
                 {
                     table.PrimaryKey("PK_AuditLogs", x => x.Id);
                 });
+
+            migrationBuilder.InsertData(
+                table: "Users",
+                columns: new[] { "Id", "Email", "FullName", "PasswordHash", "Role" },
+                values: new object[] { new Guid("11111111-1111-1111-1111-111111111111"), "admin@example.com", "Admin User", "$2a$11$qfhzNyyW0KaEAAT9NCn1h.6zV4GYtB8pjZ4Ct9XylifaSdm0OHtwS", "Admin" });
         }
 
         /// <inheritdoc />
